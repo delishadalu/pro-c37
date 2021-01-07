@@ -39,22 +39,39 @@ addFeed()
 
 feedDog()
 {
+ 
   if(food===0)
       { 
        food=0;
        
       }
   else{
-        
+    
         food=food-1;
         database.ref('/').set({
         'food':food,
         'feedtime':hour()
 
                   })
-      dog.addImage(happyDogimg)
+                }
+     
     
-}
+
+
 }
 
+washroom()
+{
+  background(washroomimg)
+}
+
+garden()
+{
+  background(gardenimg)
+}
+
+bedroom()
+{
+  background(bedroomimg)
+}
 }
